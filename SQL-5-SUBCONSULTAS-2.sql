@@ -1,5 +1,5 @@
 CREATE SCHEMA IF NOT EXISTS bd1_ejercicio_5_subconsultas_2;
-USE bd1_ejercicio_5_subconsultas_2;
+USE bd1_ejercicio_5_subconsultas_2; 
 
 create table Localidad
 (IDlocalidad int (20) primary key,

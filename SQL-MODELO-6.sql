@@ -1,5 +1,5 @@
-CREATE SCHEMA IF NOT EXISTS bd1_modelo_7;
-USE bd1_modelo_7;
+CREATE SCHEMA IF NOT EXISTS bd1_modelo_6;
+USE bd1_modelo_6;
 
 CREATE TABLE especialidad (
 	idEsp INT(5) PRIMARY KEY,
