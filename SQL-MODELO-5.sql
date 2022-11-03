@@ -85,7 +85,7 @@ SELECT * FROM paciente p
 		ORDER BY p.idLocalidad, p.legajo;
 
 #3 Para cada paciente, informar la cantidad de consultas, y el valor máximo de consulta abonado
-SELECT count(pa.legajo) AS cantidad_consultas, pa.nombre AS "Nombre paciente", me.valorConsulta AS valor_maximo_abonado
+SELECT count(co.legajoPaciente) AS cantidad_consultas, pa.nombre AS "Nombre paciente", me.valorConsulta AS valor_maximo_abonado
 		FROM consulta co 
         JOIN paciente pa 
         ON co.legajoPaciente = pa.legajo
