@@ -126,15 +126,15 @@ SELECT pa.nombre, pa.legajo
         JOIN consulta co
         ON co.legajoPaciente = pa.legajo
         WHERE pa.legajo IN (SELECT me.legajo 
-									FROM medico me 
-                                    JOIN especialidad es
-                                    ON me.idEsp = es.idEsp
-                                    WHERE es.descripcion = 'General'
-                                    AND pa.legajo NOT IN (SELECT me.legajo 
-																FROM medico me 
-																JOIN especialidad es
-																ON me.idEsp = es.idEsp
-																WHERE es.descripcion = 'Ortopedista'));
+						FROM medico me 
+						JOIN especialidad es
+						ON me.idEsp = es.idEsp
+						WHERE es.descripcion = 'General'
+						AND pa.legajo NOT IN (SELECT me.legajo 
+											FROM medico me 
+											JOIN especialidad es
+											ON me.idEsp = es.idEsp
+											WHERE es.descripcion = 'Ortopedista'));
 
 #10 Mostrar los datos de los pacientes que se han atenido por todos los médicos
 SELECT *
