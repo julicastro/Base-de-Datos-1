@@ -79,7 +79,7 @@ SELECT ju.idJugador, MAX(po.posicion)
 		from jugador ju
 		join posicion po
         on ju.idEquipo = po.idEquipo
-        where po.fecha between el verano
+        where po.fecha between '2022-01-02' and '2022-05-05'
 		group by ju.idJugador;
         
 		
